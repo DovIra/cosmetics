@@ -18,7 +18,7 @@
 Розділ системи для кожного з користувачів реалізовані як Simple Page Application з використанням vue router.
 
 Для импорту структури бази - створені [файли міграції](https://github.com/DovIra/cosmetics/tree/main/database/migrations). 
-Для первинного наповнення даними довідників (бренди, типи продуктів) - [створениі Seeders](https://github.com/DovIra/cosmetics/tree/main/database/seeds)
+Для первинного наповнення даними довідників (бренди, типи продуктів) - [Seeders](https://github.com/DovIra/cosmetics/tree/main/database/seeds)
 
 
 ### Ролі користувачів
