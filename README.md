@@ -17,8 +17,8 @@
 ## Деталі реалізації
 Розділ системи для кожного з користувачів реалізовані як Simple Page Application з використанням vue router.
 
-Для импорту структури бази - створені [файли міграції](https://github.com/mdovgal/cosmetolog/tree/main/database/migrations). 
-Для первинного наповнення даними довідників (бренди, типи продуктів) - [створениі Seeders](https://github.com/mdovgal/cosmetolog/tree/main/database/seeds)
+Для импорту структури бази - створені [файли міграції](https://github.com/DovIra/cosmetics/tree/main/database/migrations). 
+Для первинного наповнення даними довідників (бренди, типи продуктів) - [створениі Seeders](https://github.com/DovIra/cosmetics/tree/main/database/seeds)
 
 
 ### Ролі користувачів
@@ -44,7 +44,7 @@
 
 ### Rest API
 У системі реалізоване REAT API level2.
-Усі CRUD операції задекларовані у скрипті [api.php](https://github.com/mdovgal/cosmetolog/blob/main/routes/api.php), мають свої окремі URL та розподілені наступним чином:
+Усі CRUD операції задекларовані у скрипті [api.php](https://github.com/DovIra/cosmetics/tree/main/routes/api.php), мають свої окремі URL та розподілені наступним чином:
 - для отримання данніх віконуються GET запити
 - для створення нових записів - використовуються POST запити
 - для редагування - PUT запити
@@ -68,6 +68,6 @@ php artisan db:seed
 Система на Heroku доступна за [http://kursovik-cosmetics.herokuapp.com/](http://kursovik-cosmetics.herokuapp.com/)
 
 ## Логічна модель даних
-![Логічна модель](https://github.com/mdovgal/cosmetolog/blob/main/Logic_model.jpg)
+![Логічна модель](https://github.com/DovIra/cosmetics/blob/main/Logic_model.jpg)
 
 
