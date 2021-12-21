@@ -26,6 +26,11 @@ Route::namespace('Api')->group(function () {
 
     Route::get('/catalog/products', 'CatalogController@allcatalog');
 
+// Routers for Cart
+    Route::get('/cart/{user_id}', 'CartController@index');
+    Route::post('/cart/{user_id}', 'CartController@save');
+    Route::post('/cart/{cart_id}/add_product/{product_id}/quantity/{quantity}', 'CartController@save_item');
+
 // Routers for Categories
     Route::get('/catalog', 'CatalogController@index');
     Route::put('/catalog/{catalog}', 'CatalogController@update');
@@ -36,6 +41,7 @@ Route::namespace('Api')->group(function () {
     Route::get('/products/category/{category}', 'ProductController@index');
 //    Route::get('/product/{product}/edit', 'ProductController@find');
     Route::post('/product', 'ProductController@save');
+    Route::post('/survey', 'ProductController@survey');
     Route::put('/product', 'ProductController@update');
     Route::get('/products/{product}', 'ProductController@find');
     Route::delete('/product/{product}', 'ProductController@delete');

@@ -24,6 +24,13 @@ Route::get('/', function () {
 Route::get('/product/{any}', function () {
     return view('welcome');
 });
+Route::get('/survey', function () {
+    return view('welcome');
+});
+
+//Route::get('/cart/{any}', function () {
+//    return view('welcome');
+//});
 
 //Route::get('/cosmetolog/{any}', function () {
 //    return view('cosmetolog');
